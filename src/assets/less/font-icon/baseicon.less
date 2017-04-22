@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'base_icon';
+    src: url(base14.woff) format("woff"); 
+}
+
+.text-icon{
+    font-family: base_icon;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+}
+
+.icon-downarrow{
+    position: relative;
+    &:after{
+        content: ' ';
+        display: inline-block;
+        position: relative;
+        top: -.2em;
+        width: .5em;
+        height: .5em;
+        border-bottom: .03rem solid #fff;
+        border-left: .03rem solid #fff;
+        transform: scaleX(0.7) rotateZ(-45deg);
+    }
+}
